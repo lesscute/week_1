@@ -78,18 +78,21 @@ ASSIGNMENT GOAL:
 
 
 '''
+def displayValues(name,age,height,is_student):
+    print(f"Name : {name}")
+    print(f"Age: {age}")
+    print(f"Height: {height} ft")
+    print(f"Students: {'Yes' if is_student else 'no'}")
 
 name = input('Please enter a name: ')
 age = int(input('Please enter an age: '))
 height = float(input('Please enter a height: '))
-is_student = bool(input('Please enter whether or not you are a student: '))
+is_student = bool(input('Please enter whether or not you are a student (yes/no): ').lower)
 
-
-
-displayValues(name,age,height,is_student)
-
+displayValues(name, age, height, is_student)
 ##### ASSIGNMENT ENDS HERE #####
-
+#I researched this and also tried my best but I don't know if I did it correctly
+#AI assisted 
 
 #%%
 # Run this cell when you're ready to check your data!
